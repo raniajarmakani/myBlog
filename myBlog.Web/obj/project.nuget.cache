@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "L07mK7KTJGhUqpZJ8XLbTHSaoUH0dTC0/mPuvNakE0CiCC22ZqKjB5CAxcNIMMGUaKGN2wyVzWg/NKpPGXz4yw==",
+  "dgSpecHash": "7hOVX9YoeGF3fd1OoBgzo91TLvoLMWgNQGcKzq/NQW/BScp9/po1Zoi2NeNzqk+TWhDOZMWk3qMIKZIC4jaT9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.Web\\myBlog.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
