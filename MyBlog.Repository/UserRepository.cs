@@ -12,7 +12,7 @@ using Dapper;
 
 namespace MyBlog.Repository
 {
-    internal class UserRepository
+    public class UserRepository : IUserRepository
     {
         private readonly IConfiguration _config;
         public UserRepository(IConfiguration config)

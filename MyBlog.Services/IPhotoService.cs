@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Services
 {
-    public interface IPhotoServices
+    public interface IPhotoService
     {
 
         public Task<ImageUploadResult> AddPhotoAsync(IFormFile photo);

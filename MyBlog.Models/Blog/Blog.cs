@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyBlog.Models.Blog
+namespace MyBlog.Models.Blog 
 {
-    public class Blog
+    public class Blog : BlogCreate
     {
         public int UserId { get; set; }
         public string Username { get; set; }

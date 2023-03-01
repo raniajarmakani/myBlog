@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MyBlog.Models.User
 {
-    public class UserCreate
+    public class UserCreate : UserLogin
     {
         [MinLength(10, ErrorMessage = "Minimum length is 10")]
         [MaxLength(30, ErrorMessage = "Maxumun length is 30")]
