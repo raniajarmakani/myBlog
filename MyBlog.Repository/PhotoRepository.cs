@@ -74,7 +74,10 @@ namespace MyBlog.Repository
                 {
                     await connection.OpenAsync();
                     newPhotoID = await connection.ExecuteScalarAsync<int>("photo_insert",
-                                                               new { Photo = dt.AsTableValuedParameter("dbo.photoType") },
+                                                               new { 
+                                                                   Photo = dt.AsTableValuedParameter("dbo.photoType") ,
+                                                                   UserID= userID
+                                                               },
                                                                commandType: CommandType.StoredProcedure);
                 }
                 photo = await GetAsync(newPhotoID);
