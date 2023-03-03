@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyBlog.Identity\MyBlog.Identity.csproj" />
     <ProjectReference Include="..\MyBlog.Models\MyBlog.Models.csproj" />
     <ProjectReference Include="..\MyBlog.Repository\MyBlog.Repository.csproj" />
     <ProjectReference Include="..\MyBlog.Services\MyBlog.Services.csproj" />

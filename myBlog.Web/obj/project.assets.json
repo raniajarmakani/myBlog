@@ -1016,6 +1016,21 @@
           }
         }
       },
+      "MyBlog.Identity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Core": "2.2.0",
+          "MyBlog.Models": "1.0.0",
+          "MyBlog.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Identity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Identity.dll": {}
+        }
+      },
       "MyBlog.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2698,6 +2713,11 @@
         "version.txt"
       ]
     },
+    "MyBlog.Identity/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Identity/MyBlog.Identity.csproj",
+      "msbuildProject": "../MyBlog.Identity/MyBlog.Identity.csproj"
+    },
     "MyBlog.Models/1.0.0": {
       "type": "project",
       "path": "../MyBlog.Models/MyBlog.Models.csproj",
@@ -2717,6 +2737,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Dapper >= 2.0.123",
+      "MyBlog.Identity >= 1.0.0",
       "MyBlog.Models >= 1.0.0",
       "MyBlog.Repository >= 1.0.0",
       "MyBlog.Services >= 1.0.0"
@@ -2749,6 +2770,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\ACER\\Desktop\\myBlog\\MyBlog.Identity\\MyBlog.Identity.csproj": {
+              "projectPath": "C:\\Users\\ACER\\Desktop\\myBlog\\MyBlog.Identity\\MyBlog.Identity.csproj"
+            },
             "C:\\Users\\ACER\\Desktop\\myBlog\\MyBlog.Models\\MyBlog.Models.csproj": {
               "projectPath": "C:\\Users\\ACER\\Desktop\\myBlog\\MyBlog.Models\\MyBlog.Models.csproj"
             },
