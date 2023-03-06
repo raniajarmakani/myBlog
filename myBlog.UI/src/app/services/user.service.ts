@@ -10,7 +10,7 @@ import { User } from '../Models/User/user.model';
 @Injectable({
   providedIn: 'root'
 })
-export class AccountService {
+export class UserService {
 
   private currentUserSubject$: BehaviorSubject<User>
 
@@ -21,7 +21,7 @@ export class AccountService {
   }
 
   login(model: UserLogin) : Observable<User>  {
-    return this.http.post<User>(`${environment.webApi}/Account/login`, model).pipe(
+    return this.http.post<User>('${environment.webApi}/User/login', model).pipe(
       map((user : User) => {
 
         if (user) {
@@ -35,7 +35,7 @@ export class AccountService {
   }
 
   register(model: UserCreate) : Observable<User> {
-    return this.http.post<User>(`${environment.webApi}/Account/register`, model).pipe(
+    return this.http.post<User>(`${environment.webApi}/User/register`, model).pipe(
       map((user : User) => {
 
         if (user) {
@@ -62,12 +62,12 @@ export class AccountService {
 
   public isLoggedIn() {
     const currentUser = this.currentUserValue;
-    const isLoggedIn = !!currentUser && !!currentUser.token;
+    const isLoggedIn = !!currentUser && !!currentUser.Token;
     return isLoggedIn;
   }
 
   logout() {
     localStorage.removeItem('myBlog-currentUser');
-    this.currentUserSubject$.next(null);
+ //   this.currentUserSubject$.next();
   }
 }
