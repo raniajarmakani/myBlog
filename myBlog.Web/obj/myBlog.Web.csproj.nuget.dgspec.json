@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.Web\\myBlog.Web.csproj": {}
+    "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.web\\myBlog.Web.csproj": {}
   },
   "projects": {
     "C:\\Users\\ACER\\Desktop\\myBlog\\MyBlog.Identity\\MyBlog.Identity.csproj": {
@@ -299,14 +299,14 @@
         }
       }
     },
-    "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.Web\\myBlog.Web.csproj": {
+    "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.web\\myBlog.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.Web\\myBlog.Web.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.web\\myBlog.Web.csproj",
         "projectName": "myBlog.Web",
-        "projectPath": "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.Web\\myBlog.Web.csproj",
+        "projectPath": "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.web\\myBlog.Web.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.Web\\obj\\",
+        "outputPath": "C:\\Users\\ACER\\Desktop\\myBlog\\myBlog.web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -351,6 +351,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
             }
           },
           "imports": [
